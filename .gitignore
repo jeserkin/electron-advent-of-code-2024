@@ -76,3 +76,5 @@ update/
 # Miscellaneous
 *.swp
 *~
+
+src/**/*.txt

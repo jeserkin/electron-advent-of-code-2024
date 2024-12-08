@@ -4,7 +4,7 @@
   "description": "Solutions for advent of code 2024",
   "main": "./src/main.js",
   "scripts": {
-    "start": "electron ./src",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
