@@ -1,0 +1,78 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+out/
+build/
+
+# Electron-related output
+*.asar
+*.asar.unpacked/
+
+# Temporary files and directories
+temp/
+.tmp/
+.cache/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Test coverage reports
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Lock files (if not in use, or if you want to enforce a specific lock file)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# TypeScript build output
+*.tsbuildinfo
+
+# Sentry sourcemaps (if you use Sentry for error tracking)
+*.map
+
+# Electron Forge artifacts (if using Electron Forge)
+out/make/
+
+# Electron Packager/Builder specific files
+*.dmg
+*.exe
+*.app
+*.deb
+*.snap
+*.rpm
+*.msi
+*.zip
+*.blockmap
+
+# Windows installer logs
+*.nsh
+*.iss
+
+# Electron auto-updater
+pending/
+update/
+
+# Miscellaneous
+*.swp
+*~

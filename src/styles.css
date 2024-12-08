@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    color: #CCC;
+}
+
+#app-container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #0F0F23;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar h3 {
+    color: white;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+#sidebar .sidebar-item {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+#sidebar .sidebar-item:hover {
+    background-color: #555;
+}
+
+#main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #1A1A39;
+    margin-left: 250px; /* Add left margin equal to the sidebar width */
+    overflow-y: auto; /* Make content area scrollable */
+}
+
+/* Hide scrollbar for main content */
+#main-content::-webkit-scrollbar {
+    display: none;
+}
+
+#main-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Welcome message */
+#main-content article em {
+    color: #FFF;
+    font-style: normal;
+    text-shadow: 0 0 5px #FFF;
+}
+
+#main-content article em.star {
+    color: #FF6;
+    font-style: normal;
+    text-shadow: 0 0 5px #FF6;
+}
+
+#main-content article h2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #0C0;
+    text-shadow: 0 0 2px #0C0, 0 0 5px #0C0;
+}
+
+#main-content article h2:hover {
+    text-decoration: none;
+    color: #9F9;
+    text-shadow: 0 0 2px #9F9, 0 0 5px #9F9;
+}
+
+#main-content article ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#main-content article li {
+    padding-left: 2.5em;
+    position: relative;
+}
+
+#main-content article li:before {
+    content: "\00a0\00a0-\00a0";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+pre {
+    font-family: "Source Code Pro", monospace;
+}
+
+code {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #CCC;
+}
+
+code:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    left: -2px;
+    right: -2px;
+    top: 3px;
+    bottom: 0;
+    border: 1px solid #333340;
+    background: #10101A;
+}

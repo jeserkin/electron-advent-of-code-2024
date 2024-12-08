@@ -1,0 +1,26 @@
+{
+  "name": "advent-of-code-2024",
+  "version": "1.0.0",
+  "description": "Solutions for advent of code 2024",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeserkin/electron-advent-of-code-2024.git"
+  },
+  "author": "Eugene Serkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeserkin/electron-advent-of-code-2024/issues"
+  },
+  "homepage": "https://github.com/jeserkin/electron-advent-of-code-2024#readme",
+  "devDependencies": {
+    "electron": "^33.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
