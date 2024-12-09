@@ -139,3 +139,17 @@ code:before {
     border: 1px solid #333340;
     background: #10101A;
 }
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #090;
+}
+
+a:hover, a:focus {
+    color: #9F9;
+}
+
+#main-content article a {
+    white-space: nowrap;
+}
