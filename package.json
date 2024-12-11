@@ -5,7 +5,50 @@
   "main": "./src/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-builder",
+    "publish": "electron-builder -p \"always\""
+  },
+  "build": {
+    "appId": "advent-of-code-2024",
+    "productName": "Advent of Code 2024",
+    "directories": {
+      "app": ".",
+      "buildResources": "build-res"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/dev-dependencies/**",
+      "!dist/**",
+      "!build/**"
+    ],
+	"extraFiles": [{
+	  "from": "src/",
+	  "to": "src/"
+	}],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "ia32",
+            "x64"
+          ]
+        }
+      ],
+	  "icon": "src/favicon_resized.png",
+	  "publish": ["github"]
+    },
+	"publish": [
+      {
+        "provider": "github",
+        "owner": "jeserkin",
+        "repo": "electron-advent-of-code-2024",
+        "vPrefixedTagName": true,
+        "private": true,
+        "releaseType": "draft"
+      }
+    ]
   },
   "repository": {
     "type": "git",
@@ -18,7 +61,8 @@
   },
   "homepage": "https://github.com/jeserkin/electron-advent-of-code-2024#readme",
   "devDependencies": {
-    "electron": "^33.2.1"
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"
