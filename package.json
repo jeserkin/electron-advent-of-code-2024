@@ -22,10 +22,12 @@
       "!dist/**",
       "!build/**"
     ],
-	"extraFiles": [{
-	  "from": "src/",
-	  "to": "src/"
-	}],
+    "extraFiles": [
+      {
+        "from": "src/",
+        "to": "src/"
+      }
+    ],
     "win": {
       "target": [
         {
@@ -36,10 +38,12 @@
           ]
         }
       ],
-	  "icon": "src/favicon_resized.png",
-	  "publish": ["github"]
+      "icon": "src/favicon_resized.png",
+      "publish": [
+        "github"
+      ]
     },
-	"publish": [
+    "publish": [
       {
         "provider": "github",
         "owner": "jeserkin",
